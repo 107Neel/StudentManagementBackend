@@ -14,10 +14,7 @@ public class StudentController {
     @Autowired
     StudentRepository studentRepository;
 
-    @GetMapping
-    public String getWelcomeMessage(){
-        return "<h1> Welcome to the world of Spring Boot!!! </h1>";
-    }
+
 
     @GetMapping("/listStudents")
     public List<Student> getAllStudents() {
